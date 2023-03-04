@@ -1,0 +1,80 @@
+body {
+    text-align: center;
+    background-color: black;
+    width: 800px;
+
+}
+h1 {
+    color: white;
+    font-size: 3em;
+    font-family: Calibri;
+    display: inline-block;
+    margin:  20px;
+}
+h4 {
+    color: white;
+    font-size: 1.2em;
+    font-family: Calibri;
+    display: inline-block;
+    margin: 5px;
+}
+.subtext {
+    color: orangered;
+    font-size: 1em;
+    font-family: Calibri;
+    display: inline-block;
+    margin: 5px;
+}
+
+pre {
+    color: white;
+    font-family: Calibri;
+    font-size: 1.2em;
+    /*display: block;*/
+    text-align: left;
+    margin: 10px;
+    /*white-space:normal;*/
+}
+
+input, select {
+  width: 300px;
+  margin: 10px 10px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: Calibri;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.input-button {
+    font-family: Calibri;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: orangered;
+    color: White;
+    border-radius: 25px;
+    transition: all .35s;
+    font-size: 1.2em;
+}
+
+.form-container {
+    width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 0px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    border-radius: 10px;
+}
+
+.result-container {
+    width: 800px;
+    margin: 10px;
+    display: block;
+}
+

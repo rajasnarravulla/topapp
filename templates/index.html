@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Find Best/Top of Anything and Anywhere</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	<br>
+	<h1>Find Best/Top of Anything and Anywhere</h1><br>
+	<h4>by <span class=subtext>Raja Narravulla</span> using <span class="subtext"> Chat GPT Framework </span></h4>
+	<div class="form-container">
+		<form action="." method="post">
+			<!--p>How Many Best: (Looking for top 5 or 10 or 20 etc)</p> </p--> 
+			<input type="number" name="number" width="200" min="0" max="20" step="5" default="5" placeholder="Best of / Top # (5/10/15/20)" required>
+			<br>
+			<!--p>Looking For: (Schools, Universities, Hospitals  etc)</p--> 
+			<input type="text" name="place" width="200" minlength="3" placeholder="Anything" required>
+				<!--select name="place" id="place">
+				  <option value="Schools">Schools</option>
+				  <option value="Colleges">Colleges</option>
+				  <option value="Universities">Universities</option>
+				  <option value="Hospitals">Hospitals</option>
+				</select-->
+				<br>
+				<!--p>Where: (Looking in Cities, States, Countries etc)</p--> 
+				<input type="text" name="location" width="200" minlength="3" placeholder="Anywhere"  required>
+				<br>
+				<input type="submit" value="Get your Best/Top" id="fetch" width="300" class="input-button" >
+			</form>
+		</div>
+		<div class="result-container">
+			<pre>
+				{{result}}
+			</pre>
+			<br>
+		</div>
+	</body>
+	</html>
+
+
