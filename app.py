@@ -3,8 +3,8 @@ import openai
 import html
 
 app = Flask(__name__)
-app.secret_key = "rajaraja"
-openai.api_key = "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"
+app.secret_key = "secret-key"
+openai.api_key = "your-api-key"
 
 @app.route("/")
 def index():
